@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Daniel Moreira | Desenvolvedor Front-end em Salvador</title>
+  <meta name="description" content="Daniel Moreira, desenvolvedor front-end e back-end júnior em Salvador (BA). Sites e sistemas para pequenos negócios: agendamento online, login com Google, painel administrativo e automação.">
+  <link rel="canonical" href="https://danielmoreira-dev.vercel.app/">
+  <meta name="theme-color" content="#07080a">
+  <meta property="og:title" content="Daniel Moreira | Desenvolvedor Front-end">
+  <meta property="og:description" content="Sites e sistemas para pequenos negócios: agendamento, login, painel administrativo e automação.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="danielmoreira.dev">
+  <meta property="og:image" content="https://danielmoreira-dev.vercel.app/assets/og.jpg">
+  <meta property="og:url" content="https://danielmoreira-dev.vercel.app/">
+  <meta property="og:image:alt" content="Portfólio de Daniel Moreira, desenvolvedor front-end">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daniel Moreira | Desenvolvedor Front-end">
+  <meta name="twitter:description" content="Sites e sistemas para pequenos negócios: agendamento, login, painel administrativo e automação.">
+  <meta name="twitter:image" content="https://danielmoreira-dev.vercel.app/assets/og.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Daniel Moreira","url":"https://danielmoreira-dev.vercel.app/","jobTitle":"Desenvolvedor Front-end e Back-end Júnior","address":{"@type":"PostalAddress","addressLocality":"Salvador","addressRegion":"BA","addressCountry":"BR"},"worksFor":{"@type":"Organization","name":"Drivox","sameAs":"https://www.instagram.com/drivox.br/"},"sameAs":["https://www.linkedin.com/in/danielmoreira-dev/","https://github.com/daminado","https://www.instagram.com/drivox.br/"],"email":"mailto:danielmoreira12anos@gmail.com","telephone":"+55 71 99735-5078","knowsAbout":["HTML","CSS","JavaScript","Firebase","Desenvolvimento web"]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ BOOT ============ -->
+<div class="boot" aria-hidden="true">
+  <div class="boot-term">
+    <div class="boot-bar"><i></i><i></i><i></i><span>~/daniel</span></div>
+    <pre class="boot-out" data-boot></pre>
+  </div>
+</div>
+
+<div class="cursor" aria-hidden="true"><span class="c-dot"></span><span class="c-ring"></span></div>
+<div class="spot" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">d</span><span class="brand-txt">danielmoreira<b>.dev</b></span></a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#projetos">Projetos</a>
+      <a href="#modelos">Modelos</a>
+      <a href="#sistemas">Sistemas</a>
+      <!-- PENDENTE: <a href="#trajetoria">Trajetória</a> -->
+      <a href="#processo">Processo</a>
+    </nav>
+    <div class="nav-right">
+      <span class="status"><i></i>Disponível para projetos</span>
+      <a href="#contato" class="btn btn-sm magnetic">Vamos conversar</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow r"><span class="pulse"></span>Desenvolvedor Front-end · Back-end Júnior</p>
+        <h1 class="hero-title">
+          <span class="ln"><span>Eu construo sites</span></span>
+          <span class="ln"><span>que <span class="rotator" data-rotator><b class="on">trabalham</b><b>agendam</b><b>vendem</b><b>automatizam</b></span></span></span>
+          <span class="ln"><span>pelo seu negócio.</span></span>
+        </h1>
+        <p class="hero-sub r">Sou o <b>Daniel Moreira</b>, tenho 18 anos, programo há mais de 4 e sou CEO da <b>Drivox</b>. Faço interfaces bonitas por fora e <b>sistemas de verdade por dentro</b>: agendamento online, login com Google, painel administrativo e automações que tiram trabalho manual do dono.</p>
+        <div class="hero-cta r">
+          <a href="#projetos" class="btn magnetic">Ver projetos <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#sistemas" class="btn btn-ghost magnetic">Testar os sistemas ao vivo</a>
+        </div>
+        <ul class="hero-stats r">
+          <!-- PENDENTE: sites entregues e sistemas criados (número exato) -->
+          <li><b data-count="4" data-suffix="+">0</b><span>anos escrevendo código</span></li>
+        </ul>
+      </div>
+
+      <!-- editor que "constrói" um componente ao vivo -->
+      <div class="live r" aria-label="Demonstração: código virando interface">
+        <div class="live-head">
+          <div class="dots"><i></i><i></i><i></i></div>
+          <div class="tabs"><span class="on">Agendamento.jsx</span><span>regras.rules</span></div>
+          <span class="live-badge"><i></i>ao vivo</span>
+        </div>
+        <div class="live-body">
+          <pre class="code" data-code></pre>
+          <div class="preview" data-preview>
+            <div class="pv-card">
+              <div class="pv-top"><span class="pv-kicker">Agendar</span><span class="pv-step" data-pv-step>1/3</span></div>
+              <div class="pv-title" data-pv="title">Escolha o serviço</div>
+              <div class="pv-chips" data-pv="chips"><span>Lavagem</span><span>Polimento</span><span>Vitrificação</span></div>
+              <div class="pv-days" data-pv="days"><span>seg<b>28</b></span><span>ter<b>29</b></span><span>qua<b>30</b></span><span>qui<b>01</b></span></div>
+              <div class="pv-slots" data-pv="slots"><span>09:00</span><span class="off">10:00</span><span>11:00</span><span>14:00</span><span class="off">15:00</span><span>16:00</span></div>
+              <button class="pv-btn" data-pv="btn" type="button">Confirmar reserva</button>
+              <div class="pv-ok" data-pv="ok"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Reservado · protocolo <b>#A7K2</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#projetos" class="scroll-hint" aria-label="Rolar"><span></span></a>
+  </section>
+
+  <!-- ============ STACK ============ -->
+  <div class="marquee" aria-label="Tecnologias">
+    <div class="mq-track" data-marquee>
+      <span>JavaScript</span><span>React</span><span>Vite</span><span>HTML &amp; CSS</span><span>Firebase Auth</span><span>Firestore</span><span>Security Rules</span><span>Node.js</span><span>REST APIs</span><span>Vercel</span><span>Git</span><span>UI Animation</span><span>SEO técnico</span><span>Responsivo</span>
+    </div>
+  </div>
+
+  <!-- ============ PROJETOS ============ -->
+  <section class="section" id="projetos">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow r">01 · Projetos</p>
+        <h2 class="r">Sistemas de verdade, <em>por dentro</em>.</h2>
+        <p class="lead r">As marcas ficam preservadas, mas o que foi construído por dentro está aqui. Cada case diz se é cliente real ou demonstração. Abaixo, quatro abertos em detalhe.</p>
+      </div>
+    </div>
+
+    <div class="cases" data-cases>
+     <div class="cases-inner">
+      <div class="cases-track" data-track>
+
+        <article class="case" style="--c1:#C8FF4D;--c2:#1c2410">
+          <div class="case-meta">
+            <span class="case-n">01</span>
+            <span class="nda"><svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>marca preservada</span>
+            <span class="kind kind-real">cliente real</span>
+          </div>
+          <p class="case-sector">Estúdio de detalhamento de motos</p>
+          <h3>Agenda por vagas + cliente acompanhando a moto em tempo real</h3>
+          <div class="case-cols">
+            <div><h4>O desafio</h4><p>Atendimento todo no WhatsApp, clientes perguntando “já ficou pronta?” e nenhum controle de quantas motos entram por dia.</p></div>
+            <div><h4>O que eu construí</h4><p>Agendamento com limite de vagas por período, “Minha garagem” com etapas e fotos do serviço e um painel kanban para a oficina.</p></div>
+          </div>
+          <ul class="feat">
+            <li>Reserva com transação: zero vaga duplicada</li>
+            <li>Login Google e e-mail</li>
+            <li>Kanban de ordens de serviço</li>
+            <li>Convite de administradores</li>
+            <li>Mensagens de WhatsApp prontas</li>
+          </ul>
+          <div class="stack"><span>Firebase Auth</span><span>Firestore</span><span>Security Rules</span><span>JS modular</span><span>Vercel</span></div>
+          <div class="case-demo">
+            <div class="mini-track" data-mini-track>
+              <div class="mt-head"><b>Honda XRE 300</b><span class="tag live">na oficina</span></div>
+              <div class="mt-bar"><span></span></div>
+              <ol>
+                <li class="done">Moto recebida</li><li class="done">Lavagem detalhada</li><li class="now">Polimento técnico</li><li>Vitrificação</li><li>Pronta para retirada</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="case" style="--c1:#7C6CFF;--c2:#171432">
+          <div class="case-meta">
+            <span class="case-n">02</span>
+            <span class="nda"><svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>marca preservada</span>
+            <span class="kind kind-demo">demonstração</span>
+          </div>
+          <p class="case-sector">Estética automotiva premium</p>
+          <h3>Reserva por horário que entende o tempo de cada serviço</h3>
+          <div class="case-cols">
+            <div><h4>O desafio</h4><p>Serviços que duram de 1h a 5h e carros de portes diferentes: um horário fixo não serve para todo mundo.</p></div>
+            <div><h4>O que eu construí</h4><p>O cliente escolhe serviços e porte do carro, e o sistema só mostra horários onde o serviço inteiro cabe. Para reservar, entra com Google em 1 clique.</p></div>
+          </div>
+          <ul class="feat">
+            <li>Cálculo de duração por serviço</li>
+            <li>Horários livres em tempo real</li>
+            <li>Conta do cliente para cancelar</li>
+            <li>Painel do dono</li>
+          </ul>
+          <div class="stack"><span>JS modular</span><span>Firebase Auth</span><span>Login Google</span><span>Firestore</span><span>Vercel</span></div>
+          <div class="case-demo">
+            <div class="mini-slots" data-mini-slots>
+              <div class="ms-top"><span>Polimento · <b>~4h</b></span><span class="tag">SUV</span></div>
+              <div class="ms-grid"></div>
+              <p class="ms-note">Só aparecem horários com 4h livres seguidas.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="case" style="--c1:#3DD6FF;--c2:#0d2027">
+          <div class="case-meta">
+            <span class="case-n">03</span>
+            <span class="nda"><svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>marca preservada</span>
+            <span class="kind kind-demo">demonstração</span>
+          </div>
+          <p class="case-sector">Energia solar · modelo reutilizável</p>
+          <h3>Simulador de economia que transforma visita em orçamento</h3>
+          <div class="case-cols">
+            <div><h4>O desafio</h4><p>Energia solar é um investimento alto, e o cliente precisa enxergar a economia antes de pedir orçamento.</p></div>
+            <div><h4>O que eu construí</h4><p>Um simulador interativo: a pessoa arrasta o valor da conta de luz, vê a economia estimada e cai direto no WhatsApp com a mensagem pronta.</p></div>
+          </div>
+          <ul class="feat">
+            <li>Simulador em tempo real</li>
+            <li>Funil direto para o WhatsApp</li>
+            <li>Comparativo antes × depois</li>
+            <li>Landing de alta conversão</li>
+          </ul>
+          <div class="stack"><span>React</span><span>Vite</span><span>UX de conversão</span><span>SEO local</span><span>Vercel</span></div>
+          <div class="case-demo">
+            <div class="mini-sim" data-mini-sim>
+              <label>Conta de luz hoje <b data-sim-val>R$ 450</b></label>
+              <input type="range" min="150" max="2000" step="10" value="450" aria-label="Valor da conta de luz">
+              <div class="sim-out"><div><span>nova conta</span><b data-sim-new>R$ 23 – 90</b></div><div class="hl"><span>economia / ano</span><b data-sim-year>até R$ 5.130</b></div></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case" style="--c1:#FF7A45;--c2:#2a140c">
+          <div class="case-meta">
+            <span class="case-n">04</span>
+            <span class="nda"><svg viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>marca preservada</span>
+            <span class="kind kind-real">cliente real</span>
+          </div>
+          <p class="case-sector">Loja de parafusos e ferramentas</p>
+          <h3>Catálogo que vira orçamento pronto no WhatsApp, com painel por cargo</h3>
+          <div class="case-cols">
+            <div><h4>O desafio</h4><p>Cada item tem medida, rosca e acabamento. Pedido solto no WhatsApp virava um vai e volta de perguntas antes de sair o orçamento.</p></div>
+            <div><h4>O que eu construí</h4><p>O cliente monta a lista por linha de produto e envia com número de pedido. A equipe atende num painel onde vendedor só vê pedidos e o dono controla o resto.</p></div>
+          </div>
+          <ul class="feat">
+            <li>Lista de orçamento com nº de pedido</li>
+            <li>Mensagem pronta no WhatsApp</li>
+            <li>Status do pedido até a venda</li>
+            <li>3 níveis de acesso</li>
+            <li>Catálogo editável sem código</li>
+            <li>Guia “qual parafuso usar?”</li>
+          </ul>
+          <div class="stack"><span>Firebase Auth</span><span>Firestore</span><span>Security Rules</span><span>JS modular</span><span>Vercel</span></div>
+          <div class="case-demo">
+            <div class="mini-quote" data-mini-quote>
+              <div class="mq-list"></div>
+              <div class="mq-msg"><pre data-mq-msg></pre><time>pedido <b data-mq-code>HF-7Q2KD</b></time></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case case-next">
+          <p class="eyebrow">05 · Próximo</p>
+          <h3>O próximo pode ser o <em>seu</em>.</h3>
+          <p>Barbearia, clínica, oficina, loja, estúdio… se o seu negócio depende de agenda, pedidos ou atendimento, dá para automatizar.</p>
+          <a href="#contato" class="btn magnetic">Começar um projeto</a>
+        </article>
+      </div>
+      <div class="cases-progress" aria-hidden="true"><span data-cases-bar></span></div>
+     </div>
+    </div>
+
+    <div class="wrap">
+      <div class="pj-head">
+        <h3 class="r">Mais projetos, <em>incluindo 3D</em>.</h3>
+        <p class="r">Cliente real, projeto próprio ou demonstração: cada um diz o que é.</p>
+      </div>
+      <div class="pj-grid">
+        <article class="pj r">
+          <figure class="pj-img"><img src="assets/projetos/carro-3d-900.webp" srcset="assets/projetos/carro-3d-600.webp 600w, assets/projetos/carro-3d-900.webp 900w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="563" alt="Carro 3D transparente mostrando cilindro de GNV, motor, freios e suspensão" loading="lazy" decoding="async"></figure>
+          <div class="pj-body">
+            <div class="pj-tags"><span class="kind kind-real">cliente real</span><span class="pj-status">em desenvolvimento</span></div>
+            <p class="case-sector">Locação de carros com GNV e oficina própria</p>
+            <h3>Carro 3D em raio-X que mostra o que a manutenção cobre</h3>
+            <div class="pj-cols">
+              <div><h4>O desafio</h4><p>Vender a locação para motorista de aplicativo, provar que a manutenção é por conta da empresa e deixar o dono atualizar a frota sem depender de programador.</p></div>
+              <div><h4>O que eu construí</h4><p>Site com um carro 3D montado no navegador e peças clicáveis (kit GNV, motor, freios, suspensão), calculadora de economia gasolina × GNV, frota com a situação de cada carro e painel com acesso por cargo. Em celular fraco, o 3D vira imagem parada.</p></div>
+            </div>
+            <div class="stack"><span>Three.js</span><span>JS modular</span><span>Firebase Auth</span><span>Firestore</span><span>Security Rules</span><span>Vercel</span></div>
+            <a class="btn btn-ghost btn-sm pj-live" href="https://indiautocar.vercel.app/" target="_blank" rel="noopener">Ver ao vivo<span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </article>
+        <article class="pj r">
+          <figure class="pj-img"><img src="assets/projetos/drivox-900.webp" srcset="assets/projetos/drivox-600.webp 600w, assets/projetos/drivox-900.webp 900w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="563" alt="Página inicial da Drivox Achadinhos com busca e os últimos produtos do perfil" loading="lazy" decoding="async"></figure>
+          <div class="pj-body">
+            <div class="pj-tags"><span class="kind kind-own">projeto próprio</span></div>
+            <p class="case-sector">Drivox · vitrine de afiliados</p>
+            <h3>Os produtos dos vídeos da @drivox.br, com painel e IA</h3>
+            <div class="pj-cols">
+              <div><h4>O desafio</h4><p>Quem assiste aos reels pergunta onde comprar o acessório. Responder um por um no direct não escala.</p></div>
+              <div><h4>O que eu construí</h4><p>Vitrine com busca e categorias que leva à compra no Mercado Livre por link de afiliado. Painel com login Google e equipe, importação do produto do Mercado Livre com um clique e textos gerados por IA (Gemini) numa função da Vercel. Política de privacidade e aviso de cookies.</p></div>
+            </div>
+            <div class="stack"><span>JS modular</span><span>Firebase Auth</span><span>Firestore</span><span>Vercel Functions</span><span>Gemini API</span></div>
+            <a class="btn btn-ghost btn-sm pj-live" href="https://drivoxbr.com.br/" target="_blank" rel="noopener">Ver ao vivo<span class="sr-only"> (abre em nova aba)</span></a>
+          </div>
+        </article>
+        <article class="pj r">
+          <figure class="pj-img"><img src="assets/projetos/predio-3d-900.webp" srcset="assets/projetos/predio-3d-600.webp 600w, assets/projetos/predio-3d-900.webp 900w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="563" alt="Prédio em 3D ao entardecer com apartamentos acesos e palmeiras" loading="lazy" decoding="async"></figure>
+          <div class="pj-body">
+            <div class="pj-tags"><span class="kind kind-demo">demonstração</span></div>
+            <p class="case-sector">Imobiliária · modelo reutilizável</p>
+            <h3>Prédio em 3D: escolha o andar e veja onde bate o sol</h3>
+            <div class="pj-cols">
+              <div><h4>O desafio</h4><p>Planta e tabela de preço não respondem o que o comprador quer saber: qual andar está livre e se o apartamento pega sol.</p></div>
+              <div><h4>O que eu construí</h4><p>Prédio montado em 3D com régua de horário (sol, sombra e céu mudam), espelho de vendas com a luz acesa nos apartamentos disponíveis e simulador de financiamento SAC e Price.</p></div>
+            </div>
+            <div class="stack"><span>Three.js</span><span>JS modular</span><span>CSS</span></div>
+            
+          </div>
+        </article>
+        <article class="pj r">
+          <figure class="pj-img"><img src="assets/projetos/implante-3d-900.webp" srcset="assets/projetos/implante-3d-600.webp 600w, assets/projetos/implante-3d-900.webp 900w" sizes="(max-width: 760px) 100vw, 50vw" width="900" height="563" alt="Implante dentário em 3D com pino, conector e coroa entre dois dentes" loading="lazy" decoding="async"></figure>
+          <div class="pj-body">
+            <div class="pj-tags"><span class="kind kind-demo">demonstração</span></div>
+            <p class="case-sector">Clínica de implantes · projeto conceito</p>
+            <h3>Um implante que se monta enquanto a pessoa rola a página</h3>
+            <div class="pj-cols">
+              <div><h4>O desafio</h4><p>Implante é caro e cercado de medo. O paciente precisa entender o tratamento antes de marcar a avaliação.</p></div>
+              <div><h4>O que eu construí</h4><p>Pino, conector e coroa em 3D se encaixam na ordem do tratamento conforme a rolagem, com o texto acompanhando cada peça. O agendamento em etapas termina numa mensagem pronta para o WhatsApp.</p></div>
+            </div>
+            <div class="stack"><span>Three.js</span><span>JS modular</span><span>CSS</span></div>
+            
+          </div>
+        </article>
+        <article class="pj r">
+          
+          <div class="pj-body">
+            <div class="pj-tags"><span class="kind kind-demo">demonstração</span></div>
+            <p class="case-sector">Escritórios de advocacia · modelo reutilizável</p>
+            <h3>Um modelo de site em que a marca muda por um arquivo</h3>
+            <div class="pj-cols">
+              <div><h4>O desafio</h4><p>Fazer sites para vários escritórios sem reescrever cada um e respeitando as regras de publicidade da OAB.</p></div>
+              <div><h4>O que eu construí</h4><p>Uma base em que nome, cores, áreas de atuação e textos saem de um arquivo de configuração. Uma prévia nova fica pronta em horas. Um dos módulos é um contracheque interativo que ajuda o trabalhador a entender o próprio caso.</p></div>
+            </div>
+            <div class="stack"><span>JS modular</span><span>HTML</span><span>CSS</span></div>
+            
+          </div>
+        </article>
+      </div>
+
+      <div class="more r">
+        <div class="more-nums">
+          <!-- PENDENTE: sites entregues e sistemas criados -->
+          <div><b>9</b><span>projetos abertos aqui</span></div>
+        </div>
+        <div class="more-copy">
+          <h3>E tem mais <em>debaixo do sigilo</em>.</h3>
+          <p>As marcas dos outros projetos ficam preservadas. Se quiser ver algo parecido com o seu negócio, eu te mostro numa conversa privada, com o sistema rodando.</p>
+          <a class="btn btn-ghost magnetic" data-demo target="_blank" rel="noopener">Pedir demonstração privada <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============ MODELOS ============ -->
+  <section class="section" id="modelos">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow r">02 · Modelos</p>
+        <h2 class="r">Sua marca, <em>no estilo certo</em>.</h2>
+        <p class="lead r">Seis direções visuais que eu construo hoje, todas com a marca fictícia “SUA MARCA”. Imagine a sua no lugar. Qualquer uma pode vir com agendamento, painel e automação por dentro.</p>
+      </div>
+      <div class="mod-grid">
+        <button class="mod r" type="button" data-full="assets/modelos/impactante.webp" data-title="Impactante">
+          <div class="mod-frame"><div class="mod-bar"><i></i><i></i><i></i><span>suamarca.com.br</span></div><img src="assets/modelos/impactante.webp" alt="Modelo de site estilo impactante com marca fictícia" loading="lazy"></div>
+          <div class="mod-info"><span class="mod-n">01</span><div><b>Impactante</b><span>Automotivo · Oficinas · Academias</span></div><span class="mod-tone escuro">escuro</span></div>
+        </button>
+        <button class="mod r" type="button" data-full="assets/modelos/sofisticado.webp" data-title="Sofisticado">
+          <div class="mod-frame"><div class="mod-bar"><i></i><i></i><i></i><span>suamarca.com.br</span></div><img src="assets/modelos/sofisticado.webp" alt="Modelo de site estilo sofisticado com marca fictícia" loading="lazy"></div>
+          <div class="mod-info"><span class="mod-n">02</span><div><b>Sofisticado</b><span>Estética premium · Joias · Eventos</span></div><span class="mod-tone escuro">escuro</span></div>
+        </button>
+        <button class="mod r" type="button" data-full="assets/modelos/elegante.webp" data-title="Elegante">
+          <div class="mod-frame"><div class="mod-bar"><i></i><i></i><i></i><span>suamarca.com.br</span></div><img src="assets/modelos/elegante.webp" alt="Modelo de site estilo elegante com marca fictícia" loading="lazy"></div>
+          <div class="mod-info"><span class="mod-n">03</span><div><b>Elegante</b><span>Clínicas · Odontologia · Beleza</span></div><span class="mod-tone claro">claro</span></div>
+        </button>
+        <button class="mod r" type="button" data-full="assets/modelos/moderno.webp" data-title="Moderno">
+          <div class="mod-frame"><div class="mod-bar"><i></i><i></i><i></i><span>suamarca.com.br</span></div><img src="assets/modelos/moderno.webp" alt="Modelo de site estilo moderno com marca fictícia" loading="lazy"></div>
+          <div class="mod-info"><span class="mod-n">04</span><div><b>Moderno</b><span>Tecnologia · Energia solar · Serviços</span></div><span class="mod-tone claro">claro</span></div>
+        </button>
+        <button class="mod r" type="button" data-full="assets/modelos/classico.webp" data-title="Clássico">
+          <div class="mod-frame"><div class="mod-bar"><i></i><i></i><i></i><span>suamarca.com.br</span></div><img src="assets/modelos/classico.webp" alt="Modelo de site estilo clássico com marca fictícia" loading="lazy"></div>
+          <div class="mod-info"><span class="mod-n">05</span><div><b>Clássico</b><span>Barbearias · Restaurantes · Tatuagem</span></div><span class="mod-tone escuro">escuro</span></div>
+        </button>
+        <button class="mod r" type="button" data-full="assets/modelos/simples.webp" data-title="Simples">
+          <div class="mod-frame"><div class="mod-bar"><i></i><i></i><i></i><span>suamarca.com.br</span></div><img src="assets/modelos/simples.webp" alt="Modelo de site estilo simples com marca fictícia" loading="lazy"></div>
+          <div class="mod-info"><span class="mod-n">06</span><div><b>Simples</b><span>Lojas · Portfólios · Marcas pessoais</span></div><span class="mod-tone claro">claro</span></div>
+        </button>
+      </div>
+      <p class="mod-note r">Modelos demonstrativos com marca fictícia. Cada projeto final é feito sob medida para a identidade do cliente.</p>
+    </div>
+  </section>
+
+  <!-- ============ SISTEMAS (bento com demos) ============ -->
+  <section class="section" id="sistemas">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow r">03 · Sistemas</p>
+        <h2 class="r">Não é print. <em>Pode clicar.</em></h2>
+        <p class="lead r">Versões de demonstração das peças que eu coloco dentro dos sites. Mexe à vontade: nada aqui é salvo, e nomes e dados são fictícios.</p>
+      </div>
+
+      <div class="bento">
+        <!-- agendamento com trava -->
+        <div class="tile t-book r" data-tilt>
+          <div class="tile-head"><span class="tile-ic"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></span><div><h3>API de agendamento</h3><p>Clique num horário. Depois tente reservar o mesmo de novo.</p></div></div>
+          <div class="book-demo" data-book-demo>
+            <div class="bd-days"></div>
+            <div class="bd-slots"></div>
+            <div class="bd-log" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <!-- login google -->
+        <div class="tile t-login r" data-tilt>
+          <div class="tile-head"><span class="tile-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="4"/><path d="M4.5 20c.8-3.8 3.8-6 7.5-6s6.7 2.2 7.5 6"/></svg></span><div><h3>Login com Google</h3><p>Um clique e o cliente tem conta.</p></div></div>
+          <div class="login-demo" data-login-demo>
+            <button class="g-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.2c0-.6-.1-1.2-.2-1.7H12v3.3h5a4.2 4.2 0 0 1-1.9 2.8v2.3h3c1.8-1.6 2.9-4 2.9-6.7z" fill="#4285F4"/><path d="M12 21.5c2.5 0 4.6-.8 6.1-2.3l-3-2.3c-.8.6-1.9.9-3.1.9-2.4 0-4.4-1.6-5.1-3.8H3.8v2.4A9.5 9.5 0 0 0 12 21.5z" fill="#34A853"/><path d="M6.9 14c-.2-.6-.3-1.2-.3-1.9s.1-1.3.3-1.9V7.8H3.8a9.5 9.5 0 0 0 0 8.5z" fill="#FBBC05"/><path d="M12 6.4c1.4 0 2.6.5 3.5 1.4l2.6-2.6A9.5 9.5 0 0 0 3.8 7.8l3.1 2.4C7.6 8 9.6 6.4 12 6.4z" fill="#EA4335"/></svg>Continuar com Google</button>
+            <ol class="flow">
+              <li>popup OAuth</li><li>token verificado</li><li>perfil criado</li>
+            </ol>
+            <div class="welcome"><span class="av">C</span><div><b>Bem-vindo, Cliente!</b><span>sessão ativa · regras aplicadas</span></div></div>
+          </div>
+        </div>
+
+        <!-- kanban -->
+        <div class="tile t-kanban r">
+          <div class="tile-head"><span class="tile-ic"><svg viewBox="0 0 24 24"><rect x="3.5" y="4" width="5" height="16" rx="1.5"/><rect x="10" y="4" width="5" height="11" rx="1.5"/><rect x="16.5" y="4" width="4" height="7" rx="1.5"/></svg></span><div><h3>Painel administrativo</h3><p>Arraste os pedidos entre as colunas.</p></div></div>
+          <div class="kb" data-kanban>
+            <div class="kb-col" data-col="novo"><h4>Novos <i>2</i></h4>
+              <div class="kb-card" draggable="true"><b>Polimento</b><span>Rafael · hoje 09h</span></div>
+              <div class="kb-card" draggable="true"><b>Lavagem</b><span>Bruna · hoje 14h</span></div>
+            </div>
+            <div class="kb-col" data-col="andamento"><h4>Em andamento <i>1</i></h4>
+              <div class="kb-card" draggable="true"><b>Vitrificação</b><span>Diego · etapa 3/4</span></div>
+            </div>
+            <div class="kb-col" data-col="pronto"><h4>Prontos <i>0</i></h4></div>
+          </div>
+        </div>
+
+        <!-- automação whatsapp -->
+        <div class="tile t-wa r" data-tilt>
+          <div class="tile-head"><span class="tile-ic"><svg viewBox="0 0 24 24"><path d="M4 20l1.2-4.1A8.5 8.5 0 1 1 8.4 19z"/></svg></span><div><h3>Automação de mensagens</h3><p>Os dados do pedido viram mensagem pronta.</p></div></div>
+          <div class="wa-demo" data-wa-demo>
+            <div class="wa-bubble"><span data-wa-text></span><i class="caret"></i><time>agora ✓✓</time></div>
+            <div class="wa-vars"><span>{nome}</span><span>{servico}</span><span>{status}</span></div>
+          </div>
+        </div>
+
+        <!-- simulador -->
+        <div class="tile t-sim r" data-tilt>
+          <div class="tile-head"><span class="tile-ic"><svg viewBox="0 0 24 24"><path d="M4 20h16M7 16v-5M12 16V7M17 16v-8"/></svg></span><div><h3>Simuladores e calculadoras</h3><p>Orçamento na hora, sem planilha.</p></div></div>
+          <div class="sim-bars" data-sim-bars>
+            <div class="sb"><span>conta hoje</span><div><i style="--h:82%"><b>R$ 450</b></i></div></div>
+            <div class="sb acc"><span>com energia solar</span><div><i style="--h:12%"><b>R$ 54</b></i></div></div>
+          </div>
+        </div>
+
+        <!-- segurança -->
+        <div class="tile t-rules r">
+          <div class="tile-head"><span class="tile-ic"><svg viewBox="0 0 24 24"><path d="M12 3l7.5 2.8v5.6c0 4.9-3.2 9.2-7.5 10.9-4.3-1.7-7.5-6-7.5-10.9V5.8z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><div><h3>Segurança no banco de dados</h3><p>Cada cliente só enxerga o que é dele.</p></div></div>
+          <pre class="rules"><code><i>match</i> /bookings/{id} {
+  <i>allow read</i>: <u>if</u> resource.data.uid == request.auth.uid
+             || isAdmin();
+  <i>allow create</i>: <u>if</u> vagaLivre() && dataFutura();
+}</code></pre>
+          <div class="rules-test" data-rules-test>
+            <button type="button" data-as="cliente">ler como cliente</button><button type="button" data-as="outro">ler pedido de outro</button><button type="button" data-as="admin">ler como admin</button>
+            <output>—</output>
+          </div>
+        </div>
+
+        <!-- níveis de acesso -->
+        <div class="tile t-roles r" data-tilt>
+          <div class="tile-head"><span class="tile-ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19.5c.6-3.3 3.2-5.3 6.5-5.3s5.9 2 6.5 5.3"/><rect x="15.5" y="11" width="6" height="5" rx="1.2"/><path d="M16.8 11V9.6a1.7 1.7 0 0 1 3.4 0V11"/></svg></span><div><h3>Níveis de acesso</h3><p>Troque o cargo e veja o que ele enxerga no painel.</p></div></div>
+          <div class="roles-demo" data-roles-demo>
+            <div class="rd-pick"><button type="button" data-role="admin" class="on">Dono</button><button type="button" data-role="vendas">Vendedor</button><button type="button" data-role="org">Estoque</button></div>
+            <ul class="rd-areas">
+              <li data-area="pedidos">Pedidos</li><li data-area="catalogo">Catálogo</li><li data-area="config">Configurações</li><li data-area="acessos">Acessos</li>
+            </ul>
+            <p class="rd-note" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <!-- assistente de escolha -->
+        <div class="tile t-guide r" data-tilt>
+          <div class="tile-head"><span class="tile-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></span><div><h3>Assistente de escolha</h3><p>O cliente diz onde vai usar. O site indica o produto.</p></div></div>
+          <div class="guide-demo" data-guide-demo>
+            <div class="gd-pick"><button type="button" data-g="madeira" class="on">Madeira</button><button type="button" data-g="metal">Metal</button><button type="button" data-g="parede">Parede</button><button type="button" data-g="externa">Área externa</button></div>
+            <dl class="gd-out"></dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRAJETÓRIA ============ -->
+  <!-- PENDENTE: Trajetória escondida até o Daniel mandar os dados -->
+  <section class="section" id="trajetoria" hidden>
+    <div class="wrap traj">
+      <div class="traj-left">
+        <p class="eyebrow r">04 · Trajetória</p>
+        <h2 class="r">Comecei cedo.<br><em>Não parei mais.</em></h2>
+        <p class="lead r">Aos 14 eu já estava escrevendo código. De lá pra cá passei por análise, programação e operação em larga escala, e hoje junto tudo isso para entregar sites que viram ferramenta de trabalho.</p>
+        <div class="profile r">
+          <div class="pf-ava"><span>DM</span><i></i></div>
+          <div><b>Daniel Moreira</b><span>Desenvolvedor Front-end · Back-end Júnior</span><span>18 anos · Brasil</span></div>
+        </div>
+      </div>
+      <ol class="timeline" data-timeline>
+        <li class="r"><span class="tl-dot"></span><p class="tl-when">Início</p><h3>Analista &amp; programador</h3><p>A base: lógica, análise de requisitos e código do dia a dia. Aprendi a entender o problema antes de escrever a primeira linha.</p><div class="stack"><span>Lógica</span><span>JavaScript</span><span>Web</span></div></li>
+        <li class="r"><span class="tl-dot"></span><p class="tl-when">Escala</p><h3>Operação em larga escala</h3><p>Trabalhando com volume de verdade: processos que não podem cair, dados que não podem se perder e atenção a cada detalhe.</p><div class="stack"><span>Processos</span><span>Dados</span><span>Confiabilidade</span></div></li>
+        <li class="r"><span class="tl-dot"></span><p class="tl-when">Empreendedor</p><h3>CEO da Drivox</h3><p>Loja on-line de acessórios automotivos para todo o Brasil: mais de 600 vendas e conteúdo com centenas de milhares de visualizações. Aprendi a vender, não só a programar.</p><div class="stack"><span>E-commerce</span><span>Marketing</span><span>Conteúdo</span><span>Gestão</span></div></li>
+        <li class="r now"><span class="tl-dot"></span><p class="tl-when">Hoje</p><h3>Sites &amp; sistemas sob medida</h3><p>Front-end com cara de marca grande e back-end que resolve: agendamento, contas de cliente, painel e automação, publicados e rodando.</p><div class="stack"><span>React</span><span>Firebase</span><span>APIs</span><span>Vercel</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROCESSO ============ -->
+  <section class="section" id="processo">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow r">04 · Processo</p>
+        <h2 class="r">Do seu negócio <em>ao ar</em>.</h2>
+      </div>
+      <div class="steps">
+        <div class="step r"><span>01</span><h3>Imersão</h3><p>Eu estudo o seu negócio, o seu Instagram e como o cliente compra hoje. É daí que sai o sistema certo.</p></div>
+        <div class="step r"><span>02</span><h3>Design com identidade</h3><p>Visual feito para a sua marca: cores, fotos reais e animações que passam profissionalismo.</p></div>
+        <div class="step r"><span>03</span><h3>Sistema por dentro</h3><p>Agendamento, login, painel e automações conectados a um banco de dados seguro.</p></div>
+        <div class="step r"><span>04</span><h3>No ar e com suporte</h3><p>Publicação, domínio, testes no celular e ajustes depois da entrega. Você não fica sozinho.</p></div>
+      </div>
+
+      <div class="offer">
+        <div class="of r"><h3>Site vitrine</h3><p>Página com a cara da marca, rápida e pronta para o WhatsApp.</p><ul><li>Design sob medida</li><li>Animações</li><li>SEO e celular</li></ul></div>
+        <div class="of of-main r"><span class="of-tag">mais pedido</span><h3>Site + sistema</h3><p>Tudo do vitrine e mais o sistema que trabalha por você.</p><ul><li>Agendamento online</li><li>Login e área do cliente</li><li>Painel administrativo</li><li>Automações</li></ul></div>
+        <div class="of r"><h3>Manutenção mensal</h3><p>Hospedagem, ajustes, novas fotos e suporte contínuo.</p><ul><li>Atualizações</li><li>Monitoramento</li><li>Prioridade no suporte</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="section contact" id="contato">
+    <div class="wrap">
+      <p class="eyebrow r">05 · Contato</p>
+      <h2 class="big r">Bora colocar o seu negócio <em>pra trabalhar</em>?</h2>
+      <div class="contact-grid">
+        <form class="cform r" data-cform novalidate>
+          <div class="cf-row"><label>Seu nome<input name="nome" required autocomplete="name" placeholder="Como posso te chamar?"></label>
+          <label>Seu negócio<input name="negocio" placeholder="Ex.: barbearia, clínica, oficina"></label></div>
+          <div class="cf-group" role="group" aria-labelledby="cf-need"><span id="cf-need" class="cf-legend">O que você precisa?</span>
+            <div class="cf-chips" data-chips><button type="button">Site vitrine</button><button type="button">Agendamento online</button><button type="button">Painel admin</button><button type="button">Login de clientes</button><button type="button">Automação</button></div>
+          </div>
+          <label>Conte um pouco<textarea name="msg" rows="3" placeholder="Qual problema o site precisa resolver?"></textarea></label>
+          <button class="btn magnetic" type="submit">Enviar pelo WhatsApp <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="cf-hint" data-cf-hint></p>
+          <p class="cf-privacy">Seus dados vão só pelo WhatsApp, para eu responder ao seu pedido. Nada fica salvo neste site.</p>
+        </form>
+        <div class="clinks r" data-links></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="brand"><span class="brand-mark" aria-hidden="true">d</span><span class="brand-txt">danielmoreira<b>.dev</b></span></span>
+    <span class="muted">Feito à mão, do zero. © <span data-year></span></span>
+    <nav class="foot-links" aria-label="Redes"><a href="https://github.com/daminado/portfolio" target="_blank" rel="noopener" class="muted">Código no GitHub</a><a href="https://www.linkedin.com/in/danielmoreira-dev/" target="_blank" rel="noopener" class="muted">LinkedIn</a><a href="https://www.instagram.com/drivox.br/" target="_blank" rel="noopener" class="muted">Instagram da Drivox</a><a href="#top" class="muted">voltar ao topo</a></nav>
+  </div>
+</footer>
+
+<div class="lbox" data-lbox hidden><button class="lb-x" type="button" aria-label="Fechar">✕</button><figure><img alt=""><figcaption></figcaption></figure></div>
+
+<a class="wa-fab" data-fab target="_blank" rel="noopener" aria-label="Falar comigo no WhatsApp"><svg viewBox="0 0 24 24"><path d="M4 20l1.2-4.1A8.5 8.5 0 1 1 8.4 19z"/><path d="M9 8.6c.2-.5.6-.6 1-.6l.6 1.5-.6.9c.5 1.2 1.4 2.1 2.6 2.6l.9-.6 1.5.6c0 .4-.1.8-.6 1-1 .5-2.5.3-4.2-1.3S8.5 9.6 9 8.6z"/></svg><span>Falar comigo</span></a>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

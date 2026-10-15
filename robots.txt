@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /time
+
+Sitemap: https://danielmoreira-dev.vercel.app/sitemap.xml
