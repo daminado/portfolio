@@ -662,3 +662,5 @@ main, .foot, .nav { position: relative; z-index: 1; }
 .pj { --c1: var(--acc); }
 .foot-links { display: flex; flex-wrap: wrap; gap: 1.2rem; }
 .foot-links a:hover { color: var(--text); }
+.cv-link { align-self: center; font-size: .92rem; color: var(--text-2); text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line-2); }
+.cv-link:hover { color: var(--acc); text-decoration-color: var(--acc); }
